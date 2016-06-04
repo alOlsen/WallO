@@ -1,0 +1,125 @@
+body {	background-color: #ffc;
+		/* this is a google font
+		font-family:'Shadows Into Light', cursive;*/
+		font-family: sans-serif;
+		text-align: justify;
+		margin: 0;
+
+}
+
+
+
+@font-face { font-family: myfirstFont;
+			 src: url(../font/KGLifeisMessy.ttf);
+
+}
+
+
+h1,h2,h3,h4,h5 { font-family: myfirstFont;
+				 margin: 	   0;
+				 padding: 	   0;			
+
+}
+
+h1 {letter-spacing: 5px;}
+
+#wrap { min-width:  45%;
+		height: 	10%;
+		border: solid 3px red;
+		border-radius: 5px;
+		margin: 0 auto;
+		background-color: rgba(255, 255, 255, .5);
+}
+
+.center {text-align: center;
+
+}
+
+#menubar { background-color:	#ffc;
+		   width: 100vw;
+
+
+
+
+}
+
+#menu > li {list-style: none;
+			display: inline;
+				
+}
+
+nav {margin:auto;
+
+
+}
+
+nav ul li a {	font-family: 'Shadows Into Light', cursive;
+				text-decoration: none;
+				font-weight: bold;
+				color:#000;
+}
+
+nav ul li a:hover { color: #ccc;
+
+}
+
+nav ul li a:visited { color: #f00;
+
+}
+
+input:focus { color: #f00;
+
+}
+
+nav ul li {	
+			color:				#000;
+
+}
+
+footer a {	color: #ffc;
+			text-decoration: none;
+
+}
+
+.submenu {	list-style: none;
+			display: inline-block;
+}
+	
+.portfolio { width: 25%;
+			 float: left;
+			 padding: 0 10px;
+			 clear: left;		
+}
+
+/*This style is for the float page*/
+.test {	background-color: #ccc;
+		width:	25%;
+		height: 25%;
+		float: right;
+
+}
+
+#hometext { background-color: rgba(255,255,255,0.7);
+			padding: 5px 10px 5px 10px;
+
+}
+
+.top_text {	vertical-align: text-top;
+			margin: 0, auto;
+			padding-right: 25px;
+			clear: both;
+			width: 100%;
+}
+
+
+
+footer {text-align: center;
+		height: 10%;
+		background-color: #000;
+		color:#ccc;
+		clear: both;
+		width: 100%;
+		padding-top: 10px;
+		position: fixed;
+		bottom: 0px;
+ }

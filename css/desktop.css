@@ -1,0 +1,176 @@
+body {	
+		background-color: #ffc;
+		/* this is a google font
+		font-family:'Shadows Into Light', cursive;*/
+		font-family: sans-serif;
+		margin: 0;
+		text-align: center;
+
+}
+
+@font-face { font-family: myfirstFont;
+			 src: url(../font/KGLifeisMessy.ttf);
+
+}
+
+
+h1,h2,h3,h4,h5 { font-family: myfirstFont;
+				 margin: 0;
+				 padding: 0;			
+
+}
+
+h1 {letter-spacing: 5px;}
+
+#wrap {  min-width:  45%;
+			height: 	10%;
+			border: solid 3px red;
+	 border-radius: 5px;
+			margin: 0 auto;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+
+.center { text-align: center;
+
+}
+
+
+nav { margin: auto;
+
+}
+
+li  {	list-style-type: none;
+				display: inline;
+
+}
+
+.dropdown a { text-decoration: none;
+			  			color: black;
+
+}
+
+.dropdown a:hover, visted {	color: #f00; 
+				  text-decoration: none;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+									
+
+}
+
+p {text-align: justify;
+
+}
+
+.dropbtn {
+    
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    		        
+    		background-color: rgba(255,255,180,.65);
+    		 		 display: inline-block;
+    		         padding: 0px;
+    		     font-family: 'Shadows Into Light', cursive;
+			 text-decoration: none;
+				 font-weight: bold;
+				       color: #000;
+				   font-size: 110%;
+    		  		    left:	0px;
+    		  		  width: 100vw;
+ 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 100px;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #ffc;
+}
+
+
+input:focus { color: #f00;
+
+}
+
+/*nav ul li { background-color: #ffc;
+			color: 			  #000;
+			padding-right: 	   17px;*/
+
+
+footer a {	color: #ffc;
+			text-decoration: none;
+
+}    
+
+
+.portfolio { width: 22%;
+			 float: left;
+			 padding: 0 10px 0 50px;
+			 clear: left;		
+}
+
+/*This style is for the float page*/
+.test {	background-color: #ccc;
+		width:	25%;
+		height: 25%;
+		float: right;
+
+}
+
+#hometext { background-color: rgba(255,255,255,0.7);
+			padding: 5px 10px 5px 10px;
+
+}
+
+.top_text {	vertical-align: text-top;
+			clear: both;
+			width: 100%;
+			margin: 0, auto;
+}
+
+.top_text p {width: 95%;
+
+
+}
+
+#bottomNav{	display: none;
+
+}
+
+footer {	text-align: center;
+				height: 10%;
+	  background-color: #000;
+				 color:	#ccc;
+				 clear: both;
+				 width: 100%;
+		   padding-top: 10px;
+		      position: fixed;
+				bottom: 0px;
+ }
