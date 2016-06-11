@@ -1,104 +1,98 @@
 $(document).ready(function(){
 
-console.log ("validator");
-
-var visa 	= 	16 //the amount of digits that the card has
-var discover = 	12
-var master 	= 	10
-
-
-var teachName
-var teachEmail
-var teachSchool
-var addressSchool
-var citySchool
-var stateSchool
-var zipSchool
-
-var teachName_valid		= false;
-var teachEmail_valid 	= false;
-var teachSchool_valid 	= false;
-var addressSchool_valid = false;
-var citySchool_valid 	= false;
-var stateSchool_valid 	= false;
-var zipSchool_valid		= false;
-
-
+	console.log ("validator");
+	
+	var visa 	= 	16 //the amount of digits that the card has
+	var discover = 	12
+	var master 	= 	10
+	
+	
+	var teachName
+	var teachEmail
+	var teachSchool
+	var addressSchool
+	var citySchool
+	var stateSchool
+	var zipSchool
+	
+	var teachName_valid		= false;
+	var teachEmail_valid 	= false;
+	var teachSchool_valid 	= false;
+	var addressSchool_valid = false;
+	var citySchool_valid 	= false;
+	var stateSchool_valid 	= false;
+	var zipSchool_valid		= false;
 
 
 
-
-
-
-
-$("#teach_btn").click(function(){
-
-console.log ("volunteerBtn");
-
-teachName = 	$("#teachName").val();
-teachEmail = 	$("#teachEmail").val();
-teachSchool = 	$("#teachSchool").val();
-addressSchool =	$("#addressSchool").val();
-citySchool =	$("citySchool").val();
-stateSchool =	$("#stateSchool").val();
-zipSchool =		$("#zipSchool").val();
-
-
-console.log (teachName);
-console.log (teachEmail);
-console.log (teachSchool);
-console.log (addressSchool);
-console.log (citySchool);
-console.log (stateSchool);
-console.log (zipSchool);
-
-
-
-if (teachName==" "){
-
-	console.log("First name is required");
-	$("teachName").css ("color", "red");
-}
-else {
-	if(validate("normalString", teachName)){
-		console.log ("Pass")
-	}else{
-		console.log ("Fail")
-	}
-
-}
-
-if (teachEmail==" "){
-
-	console.log("Email is required");
-	$("teachEmail").css ("color", "red");
-}
-else {
-	if(validate("emailAddress", emailAddress)){
-		console.log ("Pass")
-	}else{
-		console.log ("Fail")
-	}
-}
-
-if (teachEmail==" "){
-
-	console.log("Email is required");
-	$("teachEmail").css ("color", "red");
-}
-else {
-	if(validate("emailAddress", emailAddress)){
-		console.log ("Pass")
-	}else{
-		console.log ("Fail")
-	}
-}
-	if(teachName_valid && teachEmail_valid && teachSchool_valid){
+	$("#teach_btn").click(function(){
+	
+		console.log ("volunteerBtn");
 		
-	}
-
-
-});
+		teachName = 	$("#teachName").val();
+		teachEmail = 	$("#teachEmail").val();
+		teachSchool = 	$("#teachSchool").val();
+		addressSchool =	$("#addressSchool").val();
+		citySchool =	$("citySchool").val();
+		stateSchool =	$("#stateSchool").val();
+		zipSchool =		$("#zipSchool").val();
+		
+		
+		console.log (teachName);
+		console.log (teachEmail);
+		console.log (teachSchool);
+		console.log (addressSchool);
+		console.log (citySchool);
+		console.log (stateSchool);
+		console.log (zipSchool);
+		
+		
+		
+		if (teachName==" "){
+		
+			console.log("First name is required");
+			$("teachName").css ("color", "red");
+		}
+		else {
+			if(validate("normalString", teachName)){
+				console.log ("Pass")
+			}else{
+				console.log ("Fail")
+			}
+		
+		}
+		
+		if (teachEmail==" "){
+		
+			console.log("Email is required");
+			$("teachEmail").css ("color", "red");
+		}
+		else {
+			if(validate("emailAddress", emailAddress)){
+				console.log ("Pass")
+			}else{
+				console.log ("Fail")
+			}
+		}
+		
+		if (teachEmail==" "){
+		
+			console.log("Email is required");
+			$("teachEmail").css ("color", "red");
+		}
+		else {
+			if(validate("emailAddress", emailAddress)){
+				console.log ("Pass")
+			}else{
+				console.log ("Fail")
+			}
+		}
+		if(teachName_valid && teachEmail_valid && teachSchool_valid){
+			
+		}
+	
+	
+	});
 
 
 	function validate(inputType, userInput){
@@ -149,33 +143,29 @@ else {
 		return valid;
 	}
 
-		function cleanup(userInput){
-			console.log("cleanup()")
+	function cleanup(userInput){
+		console.log("cleanup()")
 
-			var temp = userInput;
-			temp = temp.replace(/-/)
-			temp = temp.replace("<", "&lt");
-			temp = temp.replace(">", "&gt");
-			temp = temp.replace("SELECT", " ");
-			temp = temp.replace("DELETE", " ");
-			temp = temp.replace("INSERT", " ");
-			temp = temp.replace("alert()", " ");
-			
-			return temp;
-		}
+		var temp = userInput;
+		temp = temp.replace(/-/)
+		temp = temp.replace("<", "&lt");
+		temp = temp.replace(">", "&gt");
+		temp = temp.replace("SELECT", " ");
+		temp = temp.replace("DELETE", " ");
+		temp = temp.replace("INSERT", " ");
+		temp = temp.replace("alert()", " ");
+		
+		return temp;
+	}
 
-	});
+	if(temp.indexOf("<") == -1){
 
+	}else{
 
+		temp.replace("<", "&lt");
+	}
 
-		if(temp.indexOf("<") == -1){
-
-		}else{
-
-			temp.replace("<", "&lt");
-		}
-
-		}
+	}
 
 });
 
